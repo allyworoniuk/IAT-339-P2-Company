@@ -49,17 +49,18 @@ to check the file right before submission.
 
 /* Default styling */
 html {
-   background-color: #E6DED4;
+   background-color: #f4dddc;
 }
 body {
    font-family: Comfortaa, Helvetica;
    line-height: 160%;
+   background-color: #f4dddc;
 }
 
 header {
    position: relative;
    align-items: center;
-   border-color: black;
+   border-color: #39200e;
    border-width: .1em;
    border-bottom-style: dotted;
    border-style: ridge;
@@ -67,7 +68,7 @@ header {
    border-left-style: solid;
    padding-bottom: 1.5em;
    margin-bottom: 5em;
-   background-color: #F2D3EA;
+   /* background-color: #F2D3EA; */
 }
 
 header p {
@@ -108,7 +109,7 @@ code {
    padding-right: 1.5rem;
    border-top-width: 1rem;
    border-style: ridge;
-   border-top-color: black;
+   border-top-color: #39200e;
    width: 60%;
    align-content: space-around;
    background-color: white;
@@ -165,7 +166,7 @@ nav a:hover, nav a:focus{
 nav a {
    font-weight: bolder;
    border-radius: 0.25em;
-   border-color: black;
+   border-color: #39200e;
    border-width: .3em;
    border-style:double;
    padding: .5em;
