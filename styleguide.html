@@ -1,0 +1,411 @@
+<!-- Resources used for this exercise include the IAT 339 P1 Style Guide
+Template given to us through Canvas. I used that to mimic the layout of
+my document. W3schools was used as well to reference various HTML tags
+and understand what they do in depth, and finally, the W3C HTML
+validator was used to check my document before submission.-->
+
+<!--Using Atom text editor, it autofilled the HTML skeleton for me which includes the html/head/title and body tags -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <link href="css/main.css" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Cockroaches!</title>
+   </head>
+
+   <body>
+      <header>
+
+         <div class="header-subheader">
+            <h1>Cockroaches!</h1>
+               <p>A Style Guide Template for Cockroaches! A store where you can buy live cockroaches. </p>
+               <p>By Joycelyn Tng (Student number 301342527) & Ally Woroniuk (Student number 301346750) for IAT 339 Fall 2022. </p>
+         </div>
+
+            <!-- nav section is referenced from P1 style guide template -->
+            <div class="navbar">
+               <nav>
+                  <a href="#interactive_elements">Interactive Elements</a>
+                  <a href="#text_elements">Text Elements</a>
+                  <a href="#combined_elements">Combined Elements</a>
+                  <a href="#branding">Branding</a>
+               </nav>
+            </div>
+      </header>
+
+<!-- Interactive Elements Section -->
+      <section id="interactive_elements">
+
+         <h2>INTERACTIVE ELEMENTS</h2>
+
+            <div class="links">
+
+               <section class="element">
+                  <h3>Navigation Link</h3>
+                     <h4>CSS Selector</h4>
+                        <p>.button-nav</p>
+
+                     <h4>Sample Code</h4>
+                        <div class="code">
+                            <code>&lt;a href=&quot;#components&quot; class=&quot;button-nav&quot;&gt;Branding Components&lt;/a&gt;</code>
+                        </div>
+
+                     <h4>Rendered Element</h4>
+                        <a href="#components" class="button-nav">Branding Components</a>
+               </section>
+            </div>
+
+            <section class="element">
+               <h3>In-text link:</h3>
+
+                  <h4>CSS Selector</h4>
+                     <p>.link-text</p>
+
+                  <h4>Sample Code</h4>
+                     <div class="code">
+                         <code>&lt;a href=&quot;https://instagram.com/plutothesammypoo&quot; class=&quot;link-text&quot;&gt;Whaddup dog&lt;/a&gt;
+                        </code>
+                     </div>
+
+                  <h4>Rendered Element</h4>
+                     <a href="https://instagram.com/plutothesammypoo" class="link-text">Here is an in-text link.</a>
+            </section>
+         </section>
+
+            <!-- REFERENCE:
+            http://clipart-library.com/clip-art/cockroach-transparent-9.htm
+            Cockroach image taken from here.
+
+            https://www.w3schools.com/TAGs/tag_img.asp
+            Used w3 schools various tag reference pages for all of these input fields.
+             -->
+          <section class="element">
+                <h3>Image as a link:</h3>
+
+                   <h4>CSS Selector</h4>
+                     <p>.link-img</p>
+
+                   <h4>Sample Code</h4>
+                      <div class="code">
+                         <code>&lt;a href=&quot;https://instagram.com/plutothesammypoo&quot; class=&quot;link-img&quot;&gt;
+                &lt;img src=&quot;images/R.png&quot; alt=&quot;Picture of cockroach that leads to my dogs instagram.&quot; width=&quot;180&quot; height=&quot;150&quot;&gt;
+             &lt;/a&gt;</code>
+                     </div>
+
+                   <h4>Rendered Element</h4>
+                     <a href="https://instagram.com/plutothesammypoo" class="img">
+                        <img src="images/wan.png" alt="Picture of cockroach that leads to my dogs instagram." width="180" height="150">
+                     </a>
+         </section>
+
+
+         <section class="element">
+            <h3>Text Input Field with Label</h3>
+
+               <h4>CSS Selector</h4>
+                  <p>.text-input</p>
+
+               <h4>Sample Code</h4>
+                  <div class="code">
+                      <code>&lt;form&gt;
+                  &lt;label class=&quot;text-input&quot;&gt;What do you seek to find by sending cockroaches to someone?&lt;/label&gt;&lt;br&gt;
+                  &lt;input type=&quot;text&quot; id=&quot;inputvalue&quot; name=&quot;inputvalue&quot;&gt;&lt;br&gt;
+                  &lt;/form&gt;</code>
+                  </div>
+
+               <h4>Rendered Element</h4>
+                  <form>
+                     <label class="text-input">What do you seek to find by sending cockroaches to someone?</label><br>
+                     <input type="text" id="inputvalue" name="inputvalue">
+                  </form>
+
+         </section>
+
+         <section class="element">
+            <h3>Radio Button with Label</h3>
+            <h4>CSS Selector</h4>
+              <p>input, form</p>
+
+            <h4>Sample Code</h4>
+               <div class="code">
+                   <code>&lt;p&gt;How many cockroaches are you looking for?:&lt;/p&gt;
+              &lt;form&gt;
+            &nbsp; &lt;input type=&quot;radio&quot; id=&quot;15&quot; name=&quot;cockroach_amt&quot; value=&quot;15&quot;&gt;
+            &nbsp; &lt;label for=&quot;15&quot;&gt;1-15&lt;/label&gt;&lt;br&gt;
+            &nbsp; &lt;input type=&quot;radio&quot; id=&quot;30&quot; name=&quot;cockroach_amt&quot; value=&quot;30&quot;&gt;
+            &nbsp; &lt;label for=&quot;30&quot;&gt;16-30&lt;/label&gt;&lt;br&gt;</code>
+              </div>
+
+            <h4>Rendered Element</h4>
+              <p>How many cockroaches are you looking for?:</p>
+              <form>
+              <input type="radio" id="15" name="cockroach_amt" value="15">
+              <label for="15">1-15</label><br>
+              <input type="radio" id="30" name="cockroach_amt" value="30">
+              <label for="30">16-30</label><br>
+              <input type="radio" id="100" name="cockroach_amt" value="100">
+              <label for="100">31-100</label>
+            </form>
+         </section>
+
+         <section class="element">
+            <h3>Submit Form/Reset Form Buttons</h3>
+            <h4>CSS Selector</h4>
+             <p>.button, form</p>
+
+            <h4>Sample Code</h4>
+               <div class="code">
+                   <code>            &lt;form&gt;
+            &lt;input type=&quot;reset&quot; value=&quot;Reset&quot; class=&quot;button&quot;&gt;
+            &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; class=&quot;button&quot;&gt;
+         &lt;/form&gt;</code>
+             </div>
+
+            <h4>Rendered Element</h4>
+            <form>
+            <input type="reset" value="Reset" class="button">
+            <input type="submit" value="Submit" class="button">
+         </form>
+         </section>
+
+<!--End of Interactive Elements Section-->
+
+<!-- Text Elements Section (commenting out things in HTML is so
+cumbersome, why can't we just do two double slashes lololol) -->
+      <section id="text_elements">
+         <h2>TEXT ELEMENTS</h2>
+
+            <section class="element">
+               <h3>Headings</h3>
+                  <h4>CSS Selector</h4>
+                     <p>h1, h2, h3, h4</p>
+
+                  <h4>Sample Code</h4>
+                     <div class="code">
+                         <pre><code>&lt;h1&gt;This is what heading 1 looks like.&lt;/h1&gt;
+      &lt;h2&gt;This is what heading 2 looks like.&lt;/h2&gt;
+      &lt;h3&gt;This is what heading 3 looks like.&lt;/h3&gt;
+      &lt;h4&gt;This is what heading 4 looks like.&lt;/h4&gt;</code></pre>
+                     </div>
+
+                  <h4>Rendered Element</h4>
+                     <h1>This is what heading 1 looks like.</h1>
+                     <h2>This is what heading 2 looks like.</h2>
+                     <h3>This is what heading 3 looks like.</h3>
+                     <h4>This is what heading 4 looks like.</h4>
+               </section>
+
+               <section class="element">
+                  <h3>Paragraphs</h3>
+                     <h4>CSS Selector</h4>
+                        <p>p</p>
+
+                     <h4>Sample Code</h4>
+                        <div class="code">
+                            <code>&lt;p&gt;This is an example of a paragraph.&lt;/p&gt;</code>
+                        </div>
+
+                     <h4>Rendered Element</h4>
+                        <p>This is an example of a paragraph.</p>
+               </section>
+
+               <section class="element">
+                  <h3>Numbered List</h3>
+                     <h4>CSS Selector</h4>
+                        <p>ol</p>
+
+                     <h4>Sample Code</h4>
+                        <div class="code">
+                            <code>&lt;ol&gt;
+      &lt;li&gt;Dog&lt;/li&gt;
+      &lt;li&gt;Cat&lt;/li&gt;
+      &lt;li&gt;Dog?&lt;/li&gt;
+      &lt;li&gt;Cockroach?&lt;/li&gt;
+      &lt;/ol&gt;</code>
+                        </div>
+
+                     <h4>Rendered Element</h4>
+                        <ol>
+                           <li>Dog</li>
+                           <li>Cat</li>
+                           <li>Dog?</li>
+                           <li>Cockroach?</li>
+                        </ol>
+               </section>
+
+         </section>
+<!--End of Text Elements Section-->
+
+<!--Combined Elements Section-->
+   <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+         <div class="mainnav">
+
+            <section class="element">
+               <h3>Main Navigation</h3>
+                     <h4>CSS Selector</h4>
+                        <p>nav, .navbar</p>
+
+                     <h4>Rendered Element</h4>
+                        <nav>
+                           <a href="#about">About Us</a>
+                           <a href="#shop">Shop</a>
+                           <a href="#contact">Get In Touch!</a>
+                           <a href="#FAQ">FAQ</a>
+                        </nav>
+
+            </section>
+         </div>
+
+         <section class="element">
+            <h3>Product/Service Listing</h3>
+               <h4>CSS Selector</h4>
+                <p>list-container, listing</p>
+
+               <h4>Rendered Element</h4>
+
+               <div class="list-container">
+
+               <section class="listing">
+               <h3>One Cockroach</h3>
+                  <p class="price">$5</p>
+
+               <a href="https://instagram.com/plutothesammypoo">
+               <img src="images/wan.png" alt="Picture of cockroach that leads to my dogs instagram." class="img">
+               </a>
+
+               <p>
+                  <a href="https://www.nationalgeographic.com/animals/invertebrates/facts/madagascar-hissing-cockroach">One cockroach to send to your favourite person...</a>
+               </p>
+               </section>
+
+               <section class="listing">
+               <h3>Two Cockroaches</h3>
+               <p class="price">$8</p>
+
+               <a href="https://instagram.com/plutothesammypoo">
+               <img src="images/too.png" alt="Picture of cockroach that leads to my dogs instagram." class="img">
+               </a>
+
+               <p>
+                  <a href="https://www.nationalgeographic.com/animals/invertebrates/facts/madagascar-hissing-cockroach">Two cockroaches to send to your favourite person...</a>
+               </p>
+            </section>
+         </div>
+   </section>
+
+         <!-- REFERENCE:
+         https://www.geeksforgeeks.org/create-an-online-payment-ui-design-using-html-css/
+         https://www.w3schools.com/howto/howto_css_checkout_form.asp
+
+         used these sites to reference the layout of a payment form/
+         shopping cart as I wasn't too sure how to format one myself. -->
+
+      <section class ="element">
+         <h3>Payment Form</h3>
+            <h4>CSS Selector</h4>
+             <p>form, .button</p>
+
+            <h4>Rendered Element</h4>
+
+            <form>
+               <p>Pay Using Credit or Debit Card</p>
+                  <label>Card Number:</label>
+                     <input type="text" placeholder="####-####-####"><br>
+
+                  <label>Expiry Date:</label>
+                     <input type="text" placeholder="DD-MM-YY"><br>
+
+                  <label>CVV Number:</label>
+                     <input type="text" placeholder="###"><br>
+
+                  <label>Cardholder Name:</label>
+                     <input type="text" placeholder="Enter name here"><br>
+
+                  <input type="reset" value="Go Back" class="button">
+                  <input type="submit" value="Pay Now" class ="button">
+            </form>
+         </section>
+
+      <section class ="element">
+         <h3>Checkout Cart</h3>
+            <h4>CSS Selector</h4>
+             <p>.cart, .checkout, .thumb-img, .button</p>
+
+            <h4>Rendered Element</h4>
+
+            <form>
+            <h4>Checkout</h4>
+               <div class="cart">
+                  <div class="checkout">
+                     <img src="images/wan.png" alt="Picture of cockroach." class="thumb-img">
+                     <p><a href="#1cockroach">One Cockroach </a>$15</p>
+                     <p>Quantity = 2</p>
+                     <p>Total: $30</p>
+                  </div>
+
+                  <div class="checkout">
+                     <img src="images/too.png" alt="Picture of cockroach." class="thumb-img">
+                     <p><a href="#1cockroach">Two Cockroaches</a>$20</p>
+                     <p>Quantity = 2</p>
+                     <p>Total: $40</p>
+                  </div>
+               </div>
+            <p>Total Cost: $70</p>
+            <input type="submit" value="Continue to payment" class="button">
+         </form>
+      </section>
+   </section>
+
+<!--End of Combined Elements Section-->
+
+<!--Branding FAQ Section-->
+   <section id="branding">
+   <h2>Branding</h2>
+      <section class ="element">
+
+      <h3>What do we do?</h3>
+
+         <p>We sell cockroaches! In any quantity. Want a single cockroach? We got you. Want a dozen? We still got you. Maybe even a hundred cockroaches? We got your back! </p>
+      </section>
+
+      <section class ="element">
+      <h3>What can we offer you?</h3>
+         <ul>
+            <li>A great time</li>
+            <li>Lots of fun!</li>
+         </ul>
+         <p>In all seriousness, have you ever wanted to send a package of something not-so-nice to a not-so-nice person in your life? Roaches are one of the most resilient life-forms on the planet. And what could possibly be worse than a cockroach infestation? If you said white man studying political science, you are correct but we can't send those through mail, so we settled for the next best thing. Revenge? We got your back! (We recommend at least 30 cockroaches in this instance.) A fun prank? We got your back! (We recommend 5 or less cockroaches in this instant.) Wanting to feed your pet reptile? We also got your back!</p>
+      </section>
+
+      <section class ="element">
+      <h3>Who are you?</h3>
+         <p>You are a sensitive, thoughtful person who wishes to inflict pain onto someone, but in a way that doesn't cause result in serious consequences. Keying their car? Property destruction? Setting their belongings on fire? Classics, of course, but those can potentially lead to some not so fun lawsuits, backlash from people around you, and other dire consequences.</p>
+      </section>
+
+   </section>
+<!--End of Branding FAQ Section-->
+
+<!--Branding Components Section-->
+   <section id="components">
+      <h3>Branding Components</h3>
+
+      <section class ="element">
+         <h4>Layout Inspiration</h4>
+            <img src="images/layoutinspo.png" alt="Layout/Diagram inspiration for this web page featuring retro advertisements and half-tone textures." class="img">
+      </section>
+
+      <section class ="element">
+         <h4>Potential Moodboard/Colour Palette/Fonts</h4>
+         <p>I wanted the moodboard and layout to go for a more gritty/retro aesthetic. When I think about bugs, I think about elementary school, spending time playing in dirt, and rolling around in grass. This brings me back to filling out worksheets mass printed from copier machines. that would roughly scan pages from textbooks. The pages would be filled with splotchy ink marks, halftone dots evident on any illustrations, and I think it's just a very charming aesthetic. I wanted to emulate that within my website, so the fonts I aim to use for headlines have a shaky flow of lines, the type to be used in old newspapers which I find very nostalgic. I aim to market towards the quirky kind of teenage girls who want to have fun but also have a little demon inside them telling them to drop porcelain cups whenever they pick one up. They go to therapy regularly, but probably not quite enough.</p>
+
+         <img src="images/mbcp.png" alt="Moodboard and colour palette using gritty, retro, half-tone textured photos as well as a primarily pink, black, and cream colour palette."  class="img">
+      </section>
+
+   </section>
+<!--End of Branding Components Section-->
+
+   </body>
+</html>
