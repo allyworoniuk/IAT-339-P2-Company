@@ -1,17 +1,17 @@
 /*
-STYLE GUIDE:
-Resources used for this exercise include the IAT 339 P1 Style Guide
-Template given to us through Canvas. I used that to mimic the layout of
-my document. W3 Schools (links below) and Hex Color Picker
-(https://www.colorcodehex.com/html-color-picker.html)
-were also used as reference. Finally, the W3C CSS Validator was used
-to check the file right before submission.
+STYLE GUIDE: Cleaned up reference text for sake of P02 -- Previous references can be found in P01 Submission by Joycelyn Tng
+   */
+
+/*Colours
+REFERENCE: https://developer.mozilla.org/en-US/docs/Web/CSS/:root
 */
 
-/*------FONTS--------
-   REFERENCE: https://scalablecss.com/setup-custom-fonts-with-font-face/
-   To learn how to add custom fonts to a CSS file
-   */
+/*INSERTT COLOURS HEREEE*/
+:root {
+   --bgcolor: #000000;
+   --textcolor: #000000;
+   --secondcolor: #000000;
+}
 
 @font-face {
        font-family: 'Comfortaa';
