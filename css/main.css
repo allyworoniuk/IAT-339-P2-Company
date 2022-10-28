@@ -265,6 +265,15 @@ footer {
    height:60%;
 }
 
+.pagenext-button {
+   float: right;
+   padding: 1em;
+   margin: 1em;
+   background-color: var(--container);
+   border: solid .4em var(--secondcolor);
+   border-radius: 1em;
+}
+
 .button {
    background-color: #F2D3EA;
    font-weight: bolder;
@@ -293,6 +302,15 @@ footer {
 
 .centered-layout {
 /*let's uh actually pretend this does something*/
+}
+
+.centeredtext {
+   transform: translateY(-250%);
+   position: absolute;
+   text-align: center;
+   left: 0;
+right: 0;
+margin: 0 auto;
 }
 
 .checkout-item {
