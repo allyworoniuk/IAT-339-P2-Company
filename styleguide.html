@@ -339,21 +339,27 @@ cumbersome, why can't we just do two double slashes lololol) -->
             <form>
             <h4>Checkout</h4>
                <div class="cart">
-                  <div class="checkout">
+                  <div class="checkout-item">
                      <img src="images/wan.png" alt="Picture of cockroach." class="thumb-img">
-                     <p><a href="#1cockroach">One Cockroach </a>$15</p>
-                     <p>Quantity = 2</p>
-                     <p>Total: $30</p>
+                     <div class="checkout-item-info-container">
+                      <div class="checkout-item-name"><a href="#1cockroach">One Cockroach </a></div>
+                      <div class="checkout-item-description">It's a cockroach</div>
+                     </div>
+                     <div class="checkout-item-quantity"><input type="text" placeholder="1"></div>
+                     <div class="checkout-item-price">$15.00</div>
                   </div>
 
-                  <div class="checkout">
+                  <div class="checkout-item">
                      <img src="images/too.png" alt="Picture of cockroach." class="thumb-img">
-                     <p><a href="#1cockroach">Two Cockroaches</a>$20</p>
-                     <p>Quantity = 2</p>
-                     <p>Total: $40</p>
+                     <div class="checkout-item-info-container">
+                      <div class="checkout-item-name"> <a href="#1cockroach">Two Cockroaches</a></div>
+                      <div class="checkout-item-description">It's some cockroaches</div>
+                     </div>
+                     <div class="checkout-item-quantity"><input type="text" placeholder="1"></div>
+                     <div class="checkout-item-price">$20.00</div>
                   </div>
                </div>
-            <p>Total Cost: $70</p>
+            <p>Total Cost: $35.00</p>
             <input type="submit" value="Continue to payment" class="button">
          </form>
       </section>
