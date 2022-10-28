@@ -44,8 +44,7 @@ REFERENCE: https://developer.mozilla.org/en-US/docs/Web/CSS/:root
 /*Header Styling*/
 .navbar {
    overflow: hidden;
-   width: 100%;
-   margin-left: 3%
+   border-bottom: solid .1em var(--secondcolor);
 }
 
 
@@ -57,9 +56,6 @@ body {
    font-family: Comfortaa, Helvetica;
    line-height: 160%;
    background-color: var(--bg);
-}
-
-header {
    position: relative;
    align-items: center;
    border-color: var(--secondcolor);
@@ -70,6 +66,19 @@ header {
    border-left-style: solid;
    padding-bottom: 1.5em;
    margin-bottom: 5em;
+}
+
+header {
+   /* position: relative;
+   align-items: center;
+   border-color: var(--secondcolor);
+   border-width: .1em;
+   border-bottom-style: dotted;
+   border-style: ridge;
+   border-top-width: 1.5rem;
+   border-left-style: solid;
+   padding-bottom: 1.5em;
+   margin-bottom: 5em; */
    /* background-color: #F2D3EA; */
 }
 
@@ -120,8 +129,8 @@ code {
 h1 {
    font-family: BIZUDPMincho;
    font-size: 3.5em;
-   margin-top: 2%;
-   margin-left: 4%;
+   /* margin-top: 2%;
+   margin-left: 4%; */
    line-height: 100%;
 
 }
@@ -169,8 +178,8 @@ nav a {
    font-weight: bolder;
    border-radius: 0.25em;
    border-color: #39200e;
-   border-width: .3em;
-   border-style:double;
+   border-width: .1em;
+   border-style: solid;
    padding: .5em;
    margin:0.6em;
    float:left;
