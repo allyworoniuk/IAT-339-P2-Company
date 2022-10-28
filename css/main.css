@@ -1,45 +1,11 @@
-/*
-STYLE GUIDE: Cleaned up reference text for sake of P02 -- Previous references can be found in P01 Submission by Joycelyn Tng
+/*imported other CSS file to clean up this one so it is not so messy
+REFERENCE: https://stackoverflow.com/questions/147500/is-it-possible-to-include-one-css-file-in-another */
+@import url("imports.css");
+
+/* STYLE GUIDE: Cleaned up reference text for sake of P02 -- Previous references can be found in P01 Submission by Joycelyn Tng
    */
 
-/*Colours
-REFERENCE: https://developer.mozilla.org/en-US/docs/Web/CSS/:root
-*/
 
-/*INSERTT COLOURS HEREEE*/
-:root {
-   --bg: #f4dddc;
-   --text: #000000;
-   --secondcolor: #39200e;
-   --code: #f0f0f0;
-   --container: white;
-}
-
-@font-face {
-       font-family: 'Comfortaa';
-       src: url('Comfortaa-Regular.eot');
-       src: url('Comfortaa-Regular.eot?#iefix') format('embedded-opentype'),
-           url('Comfortaa-Regular.woff2') format('woff2'),
-           url('Comfortaa-Regular.woff') format('woff'),
-           url('Comfortaa-Regular.ttf') format('truetype'),
-           url('Comfortaa-Regular.svg#Comfortaa-Regular') format('svg');
-       font-weight: normal;
-       font-style: normal;
-       font-display: swap;
-   }
-
-@font-face {
-    font-family: 'BIZ UDPMincho';
-    src: url('BIZUDPMincho-Regular.eot');
-    src: url('BIZUDPMincho-Regular.eot?#iefix') format('embedded-opentype'),
-        url('BIZUDPMincho-Regular.woff2') format('woff2'),
-        url('BIZUDPMincho-Regular.woff') format('woff'),
-        url('BIZUDPMincho-Regular.ttf') format('truetype'),
-        url('BIZUDPMincho-Regular.svg#BIZUDPMincho-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
 /*Header Styling*/
 .navbar {
@@ -120,10 +86,10 @@ code {
    padding-right: 1.5rem;
    border-top-width: 1rem;
    border-style: ridge;
-   border-top-color: #39200e;
+   border-top-color: var(--secondcolor);
    width: 60%;
    align-content: space-around;
-   background-color: white;
+   background-color: var(--white);
 }
 
 h1 {
@@ -170,26 +136,26 @@ li {
    /* REFERENCE: https://www.w3schools.com/CSSref/css3_pr_filter.asp
    Used w3 schools to figure out the different filter functions for image states.*/
 nav a:hover, nav a:focus{
-   color: white;
-   background-color: #D14234;
+   color: var(--white);
+   background-color: var(--link);
 }
 
 nav a {
    font-weight: bolder;
    border-radius: 0.25em;
-   border-color: #39200e;
+   border-color: var(--secondcolor);
    border-width: .1em;
    border-style: solid;
    padding: .5em;
    margin:0.6em;
    float:left;
-   background-color: #FFF6FD;
+   background-color: var(--navbg);
    text-decoration: none;
 }
 
 
 a {
-   color: #D14234;
+   color: var(--link);
 }
 
 a:hover {
@@ -212,7 +178,7 @@ form {
    padding: .5em;
    padding-top: 2em;
    padding-bottom: 2em;
-   background-color: #FFF6FD;
+   background-color: var(--navbg);
    margin-bottom: 22px;
    padding-left: 20px;
    border-width: 1em;
@@ -222,7 +188,7 @@ form {
 
 input {
   font: 300 1.2em "Comfortaa", monospace;
-  background-color: white;
+  background-color: var(--container);
   padding: 10px;
   margin-top: 20px;
   margin-bottom: 5px;
@@ -233,7 +199,7 @@ input {
 
 label {
    margin: 10px;
-   background-color: #FFF6FD;
+   background-color: var(--navbg);
    font-weight: bold;
    font: 1.5em "Comfortaa", monospace;
 }
@@ -243,11 +209,11 @@ footer {
 }
 /* INTERACTIVE ELEMENTS  */
 .button-nav {
-   color: #D14234;
+   color: var(--link);
 }
 
 .link-text {
-   color: #D14234;
+   color: var(--link);
 }
 
 .img {
@@ -275,7 +241,7 @@ footer {
 }
 
 .button {
-   background-color: #F2D3EA;
+   background-color: var(--buttoncolor);
    font-weight: bolder;
    border-radius: 0.25em;
    margin:10px;
@@ -283,7 +249,7 @@ footer {
 
 .button:hover {
    background-color: black;
-   color: white;
+   color: var(--white);
 }
 
 .button:focus {
@@ -291,11 +257,11 @@ footer {
 }
 
 .text_inputbox {
-   color: #79797D;
+   color: var(--textinput);
 }
 
 .text_inputbox:hover, .text_inputbox:focus {
-   color: black;
+   color: var(--black);
 }
 
 /*COMBINED ELEMENTS*/
@@ -322,7 +288,7 @@ margin: 0 auto;
   width: 100%;
   height: auto;
   text-align: left;
-  border-bottom: solid 1px #000;
+  border-bottom: solid 1px var(--black);
   padding: 2em;
 }
 
@@ -339,12 +305,12 @@ margin: 0 auto;
   margin-bottom: 0em;
   border-radius: 0.4em;
   border-style: none;
-  background-color: #f4dddc;
+  background-color: var(--bg);
   text-align: center;
 }
 
 .checkout-item:hover{
-  box-shadow: 0.1em 0.1em #39200e;
+  box-shadow: 0.1em 0.1em var(--secondcolor);
 }
 
 .checkout-item img{
@@ -409,7 +375,7 @@ margin: 0 auto;
 
 .listing {
    width:30%;
-   background-color: #FFFFFF;
+   background-color: var(--white);
    margin-bottom: 2em;
    padding: 2em;
    margin-top: 1em;

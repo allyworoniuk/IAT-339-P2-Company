@@ -1,0 +1,43 @@
+/*CSS file to import font faces/establish colours*/
+
+/*Colours
+REFERENCE: https://developer.mozilla.org/en-US/docs/Web/CSS/:root
+*/
+:root {
+   --bg: #f4dddc;
+   --text: #000000;
+   --secondcolor: #39200e;
+   --code: #f0f0f0;
+   --container: white;
+   --black: black;
+   --link: #D14234;
+   --navbg: #FFF6FD;
+   --buttoncolor: #F2D3EA;
+   --textinput: #79797D;
+}
+
+@font-face {
+       font-family: 'Comfortaa';
+       src: url('Comfortaa-Regular.eot');
+       src: url('Comfortaa-Regular.eot?#iefix') format('embedded-opentype'),
+           url('Comfortaa-Regular.woff2') format('woff2'),
+           url('Comfortaa-Regular.woff') format('woff'),
+           url('Comfortaa-Regular.ttf') format('truetype'),
+           url('Comfortaa-Regular.svg#Comfortaa-Regular') format('svg');
+       font-weight: normal;
+       font-style: normal;
+       font-display: swap;
+   }
+
+@font-face {
+    font-family: 'BIZ UDPMincho';
+    src: url('BIZUDPMincho-Regular.eot');
+    src: url('BIZUDPMincho-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BIZUDPMincho-Regular.woff2') format('woff2'),
+        url('BIZUDPMincho-Regular.woff') format('woff'),
+        url('BIZUDPMincho-Regular.ttf') format('truetype'),
+        url('BIZUDPMincho-Regular.svg#BIZUDPMincho-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
