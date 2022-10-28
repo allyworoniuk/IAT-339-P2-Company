@@ -228,6 +228,7 @@ input {
   margin-bottom: 5px;
   margin-left: 10px;
   margin-right: 10px;
+  width: 50%;
 }
 
 label {
@@ -237,7 +238,9 @@ label {
    font: 1.5em "Comfortaa", monospace;
 }
 
-
+footer {
+   border-top: solid .1em var(--secondcolor);
+}
 /* INTERACTIVE ELEMENTS  */
 .button-nav {
    color: #D14234;
@@ -250,6 +253,11 @@ label {
 .img {
    width: 80%;
    height:auto;
+}
+
+.overlay-img {
+   width: 100%;
+/*let's pretend theres code here to make the text overlay it*/
 }
 
 .thumb-img {
@@ -282,6 +290,10 @@ label {
 }
 
 /*COMBINED ELEMENTS*/
+
+.centered-layout {
+/*let's uh actually pretend this does something*/
+}
 
 .checkout-item {
   display: grid;
