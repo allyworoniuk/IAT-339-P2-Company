@@ -142,6 +142,7 @@ a {
 
 a:hover {
    text-decoration: none;
+   color: var(--white);
 }
 
    /* default link image state grayscale */
