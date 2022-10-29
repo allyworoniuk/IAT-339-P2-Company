@@ -4,15 +4,11 @@ REFERENCE: https://stackoverflow.com/questions/147500/is-it-possible-to-include-
 
 /* STYLE GUIDE: Cleaned up reference text for sake of P02 -- Previous references can be found in P01 Submission by Joycelyn Tng
    */
-
-
-
 /*Header Styling*/
 .navbar {
    overflow: hidden;
    border-bottom: solid .1em var(--secondcolor);
 }
-
 
 /* Default styling */
 html {
@@ -32,20 +28,6 @@ body {
    border-left-style: solid;
    padding-bottom: 1.5em;
    margin-bottom: 5em;
-}
-
-header {
-   /* position: relative;
-   align-items: center;
-   border-color: var(--secondcolor);
-   border-width: .1em;
-   border-bottom-style: dotted;
-   border-style: ridge;
-   border-top-width: 1.5rem;
-   border-left-style: solid;
-   padding-bottom: 1.5em;
-   margin-bottom: 5em; */
-   /* background-color: #F2D3EA; */
 }
 
 header p {
