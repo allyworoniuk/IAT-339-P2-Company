@@ -222,7 +222,7 @@ footer {
    border-radius: 1em;
 }
 
-.button {
+.button{
    background-color: var(--buttoncolor);
    font-weight: bolder;
    border-radius: 0.25em;
@@ -231,10 +231,38 @@ footer {
 
 .button:hover {
    background-color: black;
-   color: var(--white);
+   color: var(--bg);
+   border-color: var(--bg);
 }
 
 .button:focus {
+   text-decoration: underline;
+}
+
+.button-link{
+  font: 300 1.2em "Comfortaa", monospace;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 50%;
+  background-color: var(--buttoncolor);
+  font-weight: bolder;
+  border-radius: 1em;
+  margin:10px;
+  color: black;
+  border: solid .25em black;
+  text-decoration: none;
+}
+
+.button-link:hover {
+   background-color: black;
+   color: var(--bg);
+   border-color: var(--bg);
+}
+
+.button-link:focus {
    text-decoration: underline;
 }
 
