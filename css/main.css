@@ -1,9 +1,7 @@
 /*imported other CSS file to clean up this one so it is not so messy
 REFERENCE: https://stackoverflow.com/questions/147500/is-it-possible-to-include-one-css-file-in-another */
 @import url("imports.css");
-
-/* STYLE GUIDE: Cleaned up reference text for sake of P02 -- Previous references can be found in P01 Submission by Joycelyn Tng
-   */
+/* STYLE GUIDE: Cleaned up reference text for sake of P02 -- Previous references can be found in P01 Submission by Joycelyn Tng   */
 /*Header Styling*/
 .navbar {
    overflow: hidden;
