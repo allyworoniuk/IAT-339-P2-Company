@@ -8,6 +8,16 @@ REFERENCE: https://stackoverflow.com/questions/147500/is-it-possible-to-include-
    border-bottom: solid .1em var(--secondcolor);
 }
 
+.navbar-bottom {
+   overflow: hidden;
+   margin-bottom: 0;
+}
+
+.navbar-bottom nav{
+  margin-bottom: 0;
+  text-align: center;
+}
+
 /* Default styling */
 html {
    background-color: var(--bg);
@@ -25,7 +35,7 @@ body {
    border-top-width: 1.5rem;
    border-left-style: solid;
    padding-bottom: 1.5em;
-   margin-bottom: 5em;
+   /* margin-bottom: 5em; */
 }
 
 header p {
@@ -187,7 +197,16 @@ label {
 
 footer {
    border-top: solid .1em var(--secondcolor);
+   text-align: center;
+   border-bottom: none;
+   margin-bottom: 0;
 }
+
+footer p {
+  text-align: center;
+}
+
+
 /* INTERACTIVE ELEMENTS  */
 .button-nav {
    color: var(--link);
@@ -276,8 +295,22 @@ footer {
 /*COMBINED ELEMENTS*/
 
 .centered-layout {
-/*let's uh actually pretend this does something*/
 
+}
+
+.centered-layout h3{
+  text-align: center;
+}
+
+.centered-layout p {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.centered-layout form{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .centeredtext {
@@ -289,7 +322,7 @@ footer {
    margin: 0 auto;
    color: white;
 
-background-color: rgba(0,0,0, 0.6); /* semi transparent black*/
+background-color: rgba(0,0,0, 1); /* semi transparent black*/
 }
 
 
