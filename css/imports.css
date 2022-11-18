@@ -3,8 +3,7 @@
 /*Colours
 REFERENCE: https://developer.mozilla.org/en-US/docs/Web/CSS/:root
 */
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
-@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:bold,bolditalic,italic|Comfortaa:bold);
 
 :root {
    --bg: #FFEBCA;

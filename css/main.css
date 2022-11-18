@@ -191,7 +191,7 @@ form {
    background-color: var(--navbg);
    margin-bottom: 22px;
    padding-left: 20px;
-   border-width: 1em;
+   border-width: .01em;
    border-style: solid;
    border-radius: 10px;
 }
@@ -204,6 +204,7 @@ input {
   margin-bottom: 5px;
   margin-left: 10px;
   margin-right: 10px;
+  border-radius: 0.3em;
   width: 50%;
 }
 
