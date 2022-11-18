@@ -7,15 +7,15 @@ REFERENCE: https://developer.mozilla.org/en-US/docs/Web/CSS/:root
 @import url(https://fonts.googleapis.com/css?family=Comfortaa);
 
 :root {
-   --bg: #f4dddc;
-   --text: #000000;
+   --bg: #FFEBCA;
+   --text: #372727;
    --secondcolor: #39200e;
    --code: #f0f0f0;
    --container: white;
    --black: black;
-   --link: #D14234;
+   --link: #BE5F1B;
    --navbg: #FFF6FD;
-   --buttoncolor: #F2D3EA;
+   --buttoncolor: #F4DDDC;
    --textinput: #79797D;
    --white: #FFF;
 }

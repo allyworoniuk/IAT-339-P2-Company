@@ -173,7 +173,7 @@ form {
    margin-bottom: 22px;
    padding-left: 20px;
    border-width: 1em;
-   border-style: double;
+   border-style: solid;
    border-radius: 10px;
 }
 
@@ -427,8 +427,8 @@ background-color: rgba(0,0,0, 1); /* semi transparent black*/
    margin-bottom: 2em;
    padding: 2em;
    margin-top: 1em;
-   border-width: .5em;
-   border-style: double;
+   border-width: .05em;
+   border-style: solid;
    border-radius: 1em;
    justify-content: center;
    align-items: center;
