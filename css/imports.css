@@ -3,6 +3,9 @@
 /*Colours
 REFERENCE: https://developer.mozilla.org/en-US/docs/Web/CSS/:root
 */
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+
 :root {
    --bg: #f4dddc;
    --text: #000000;
@@ -17,28 +20,36 @@ REFERENCE: https://developer.mozilla.org/en-US/docs/Web/CSS/:root
    --white: #FFF;
 }
 
+/* latin-ext */
 @font-face {
-       font-family: 'Comfortaa';
-       src: url('Comfortaa-Regular.eot');
-       src: url('Comfortaa-Regular.eot?#iefix') format('embedded-opentype'),
-           url('Comfortaa-Regular.woff2') format('woff2'),
-           url('Comfortaa-Regular.woff') format('woff'),
-           url('Comfortaa-Regular.ttf') format('truetype'),
-           url('Comfortaa-Regular.svg#Comfortaa-Regular') format('svg');
-       font-weight: normal;
-       font-style: normal;
-       font-display: swap;
-   }
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/comfortaa/v40/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMDr0fIA9c.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/comfortaa/v40/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMDrMfIA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
+/* latin-ext */
 @font-face {
-    font-family: 'BIZ UDPMincho';
-    src: url('BIZUDPMincho-Regular.eot');
-    src: url('BIZUDPMincho-Regular.eot?#iefix') format('embedded-opentype'),
-        url('BIZUDPMincho-Regular.woff2') format('woff2'),
-        url('BIZUDPMincho-Regular.woff') format('woff'),
-        url('BIZUDPMincho-Regular.ttf') format('truetype'),
-        url('BIZUDPMincho-Regular.svg#BIZUDPMincho-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDZbtPY_Q.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
