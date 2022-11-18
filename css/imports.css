@@ -14,6 +14,7 @@ REFERENCE: https://developer.mozilla.org/en-US/docs/Web/CSS/:root
    --navbg: #FFF6FD;
    --buttoncolor: #F2D3EA;
    --textinput: #79797D;
+   --white: #FFF;
 }
 
 @font-face {

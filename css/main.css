@@ -422,7 +422,7 @@ background-color: rgba(0,0,0, 1); /* semi transparent black*/
 /*REFERENCE: https://uxplanet.org/how-to-create-a-shopping-cart-ui-using-html-css-e5db3cd55aa0 to figure out how to align items within container */
 
 .listing {
-   width:30%;
+   width:25%;
    background-color: var(--white);
    margin-bottom: 2em;
    padding: 2em;
@@ -434,6 +434,17 @@ background-color: rgba(0,0,0, 1); /* semi transparent black*/
    align-items: center;
 }
 
+.listing:hover, .listing:focus{
+  box-shadow: 1em 1em 1em var(--secondcolor);
+  transition: box-shadow 0.5s ease-in-out;
+
+}
+
+.listing h3{
+  float: left;
+  width: 60%;
+}
+
 .listing p {
    float: right;
    font-weight: bolder;
@@ -441,7 +452,11 @@ background-color: rgba(0,0,0, 1); /* semi transparent black*/
 }
 
 .price {
-   font-size: 3em;
+  float: right;
+
+  font-size: 3em;
+  text-align: right;
+
 }
 
 .list-container {
