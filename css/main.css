@@ -195,11 +195,10 @@ form {
    padding: .5em;
    padding-top: 2em;
    padding-bottom: 2em;
-   background-color: var(--navbg);
+   /* background-color: var(--navbg); */
    margin-bottom: 22px;
    padding-left: 20px;
    border-width: .01em;
-   border-style: solid;
    border-radius: 10px;
 }
 
