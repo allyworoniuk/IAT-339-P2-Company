@@ -83,12 +83,22 @@ body {
    /* border-top-width: 1.5rem; */
    border-left-style: solid;
    padding-bottom: 1.5em;
-   /* margin-bottom: 5em; */
+   overflow: auto;
 }
 
 header p {
    margin-top: 2.5em;
    width: 30%;
+}
+
+#title {
+   position: relative;
+   padding-top: 20em;
+   padding-bottom: 25em;
+   text-align: center;
+   font-weight: 900;
+   font-size: 1em;
+
 }
 
 .header-subheader {
@@ -157,6 +167,7 @@ h3 {
    margin-top: 4%;
    margin-left: 4%;
    color: var(--text);
+   font-style: italic;
 }
 
 h4 {
@@ -226,7 +237,7 @@ a:hover {
 
    /* default link image state grayscale */
 a img {
-   filter:grayscale(100%);
+   /* filter:grayscale(100%); */
 }
 
 a img:hover, img:focus {
@@ -351,7 +362,52 @@ footer {
    padding-top: 2em;
 }
 
+.flexylayout {
+   padding-top: 3em;
+   padding-bottom: 5em;
+   border-top: solid black .25em;
+   border-bottom: solid black .25em;
+   display: flex;
+   background-color: white;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+.flexylayout>div {
+ width: 50%;
+ margin: 5%;
+}
 
+.flexylayout form {
+   width: 100%;
+}
+
+
+.review {
+   display: flex;
+   justify-content:center;
+   align-items: center;
+
+}
+
+.review p {
+   font-family: "Playfair Display";
+   font-size: 1em;
+}
+
+.review > div {
+   width: 50%;
+align-self: left;
+margin: 5%;
+}
+
+.review a {
+   text-decoration: none;
+}
+
+.review a img {
+   filter: none;
+}
 
 /* INTERACTIVE ELEMENTS  */
 .button-nav {
@@ -369,6 +425,9 @@ footer {
 
 .overlay-img {
    width: 100%;
+   background-color: var(--othersecondcolor);
+   z-index: 0;
+   position: relative;
 /*let's pretend theres code here to make the text overlay it*/
 }
 
