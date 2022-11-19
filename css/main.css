@@ -811,8 +811,6 @@ margin: 5%;
 }
 
 
-/*REFERENCE: https://uxplanet.org/how-to-create-a-shopping-cart-ui-using-html-css-e5db3cd55aa0 to figure out how to align items within container */
-
 .listing {
    width:25%;
    background-color: var(--white);
