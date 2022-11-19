@@ -192,9 +192,13 @@ li {
    /* REFERENCE: https://www.w3schools.com/CSSref/css3_pr_filter.asp
    Used w3 schools to figure out the different filter functions for image states.*/
 nav a:hover, nav a:focus{
-   color: var(--white);
-   background-color: var(--link);
-
+   color: var(--black);
+   /* background-color: var(--link); */
+   box-shadow: 0.5em 0.2em 0.1em 0em rgb(0,0,0,0.4);
+   border-left: 0.1em solid black;
+   border-right: 0.1em solid black;
+   border-top-left-radius: 0.6em;
+   border-top-right-radius: 0.6em;
 }
 
 nav a {
@@ -215,7 +219,7 @@ nav a {
 .selected-tab{
 
   background-color: var(--bg);
-
+  color: var(--black);
   /* border-top: 0.1em solid black; */
   border-left: 0.1em solid black;
   border-right: 0.1em solid black;
@@ -233,6 +237,7 @@ a {
 a:hover {
    text-decoration: none;
    color: var(--white);
+
 }
 
    /* default link image state grayscale */
@@ -325,12 +330,30 @@ input[type=submit]{
    text-align: center;
    /*FIX THIS STUFF HERE*/
 }
-
-.order-para {
-/* or 30px */
-
-text-align: center;
+.completed {
+   text-align: center;
+   padding-top: 9em;
+   padding-bottom: 9em;
+   margin-bottom: 10em;
 }
+/*REFERENCE: https://ricardometring.com/css-class-inside-other-class
+for nesting a class inside another class -- i forgot how to do this oops
+*/
+.completed .button {
+   margin-top: 15em;
+   margin-bottom: 15em;
+}
+
+#continueshop {
+   margin-top:8em;
+}
+
+.italic {
+   font-style: italic;
+   font-weight: 200;
+}
+
+
 
 footer {
    clear: both;
@@ -429,10 +452,15 @@ margin: 5%;
 }
 
 .button{
-   background-color: var(--buttoncolor);
+   background-color: var(--white);
    font-weight: bolder;
    border-radius: 0.25em;
-   margin:10px;
+   margin:.9em;
+   padding: 1em;
+   border: .1em solid black;
+   color: black;
+   text-decoration: none;
+
 }
 
 .button:hover {
