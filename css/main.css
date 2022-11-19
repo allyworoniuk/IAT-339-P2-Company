@@ -41,7 +41,7 @@ REFERENCE: https://stackoverflow.com/questions/147500/is-it-possible-to-include-
 
 .navbar-bottom ul li:nth-child(1){
   font-weight: bolder;
-  font-size: 1.1em;
+  font-size: 1em;
 
 }
 
@@ -69,6 +69,7 @@ html {
 }
 
 body {
+
    font-family: "Comfortaa", Helvetica;
    line-height: 160%;
    background-color: var(--bg);
@@ -370,8 +371,8 @@ margin: 5%;
 .pagenext-button {
    font-family: "Playfair Display";
    font-style: italic;
-   float: right;
-   position: relative;
+
+
    padding: 1em;
    margin: 1em;
    background-color: var(--container);
@@ -572,7 +573,7 @@ margin: 5%;
 }
 
 .listing:hover, .listing:focus{
-  box-shadow: 1em 1em 1em var(--secondcolor);
+  box-shadow: 0.5em 0.2em 0.1em 0em rgb(0,0,0,0.4);
   transition: box-shadow 0.5s ease-in-out;
 
 }
