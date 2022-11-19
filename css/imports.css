@@ -9,6 +9,8 @@ REFERENCE: https://developer.mozilla.org/en-US/docs/Web/CSS/:root
    --bg: #FFEBCA;
    --text: #39200E;
    --secondcolor: #39200e;
+   --othersecondcolor: #F4DDDC;
+
    --code: #f0f0f0;
    --container: white;
    --black: black;
