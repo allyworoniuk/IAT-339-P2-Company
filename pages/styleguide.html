@@ -98,7 +98,7 @@ validator was used to check my document before submission.-->
 
                    <h4>Rendered Element</h4>
                      <a href="https://instagram.com/plutothesammypoo" class="img">
-                        <img src="../images/wan.png" alt="Picture of cockroach that leads to my dogs instagram." width="180" height="150">
+                        <img src="../images/1roach.png" alt="Picture of cockroach that leads to my dogs instagram." width="180" height="150">
                      </a>
          </section>
 
@@ -249,11 +249,11 @@ cumbersome, why can't we just do two double slashes lololol) -->
             <section class="element">
                <h3>Main Navigation</h3>
                      <h4>CSS Selector</h4>
-                        <p>nav, .navbar</p>
+                        <p>nav, .navbar, .selected-tab</p>
 
                      <h4>Rendered Element</h4>
-                        <nav>
-                           <a href="#about">About Us</a>
+                        <nav class="navbar">
+                           <a href="#about" class="selected-tab">About Us</a>
                            <a href="#shop">Shop</a>
                            <a href="#contact">Get In Touch!</a>
                            <a href="#FAQ">FAQ</a>
@@ -268,33 +268,24 @@ cumbersome, why can't we just do two double slashes lololol) -->
                 <p>list-container, listing</p>
 
                <h4>Rendered Element</h4>
-
                <div class="list-container">
+               <div class="listing">
+               <h3>Just One Cockroach</h3>
+               <p class="price">$5</p>
 
-               <section class="listing">
-               <h3>One Cockroach</h3>
-                  <p class="price">$5</p>
-
-               <a href="https://instagram.com/plutothesammypoo">
-               <img src="../images/wan.png" alt="Picture of cockroach that leads to my dogs instagram." class="img">
+               <a href="cockroach.html">
+               <img src="../images/1roach.png" alt="Picture of one cockroach leading to the one cockroach listing." class="img">
                </a>
+            </div>
 
-               <p>
-                  <a href="https://www.nationalgeographic.com/animals/invertebrates/facts/madagascar-hissing-cockroach">One cockroach to send to your favourite person...</a>
-               </p>
-               </section>
+            <section class="listing">
+            <h3>Two Cockroaches</h3>
+            <p class="price">$8</p>
 
-               <section class="listing">
-               <h3>Two Cockroaches</h3>
-               <p class="price">$8</p>
+            <a href="cockroach.html">
+            <img src="../images/2roach.png" alt="Picture of two cockroaches leading to the two cockroach listing." class="img">
+            </a>
 
-               <a href="https://instagram.com/plutothesammypoo">
-               <img src="../images/too.png" alt="Picture of cockroach that leads to my dogs instagram." class="img">
-               </a>
-
-               <p>
-                  <a href="https://www.nationalgeographic.com/animals/invertebrates/facts/madagascar-hissing-cockroach">Two cockroaches to send to your favourite person...</a>
-               </p>
             </section>
          </div>
    </section>
@@ -309,27 +300,45 @@ cumbersome, why can't we just do two double slashes lololol) -->
       <section class ="element">
          <h3>Payment Form</h3>
             <h4>CSS Selector</h4>
-             <p>form, .button</p>
+             <p>.checkout-container, .payment-info-form, .billing-info-form</p>
 
             <h4>Rendered Element</h4>
+            <div class="checkout-container">
+                  <form class="payment-info-form" action=completed.html>
+                    <p class="bold">PAYMENT DETAILS</p>
 
-            <form>
-               <p>Pay Using Credit or Debit Card</p>
-                  <label>Card Number:</label>
-                     <input type="text" placeholder="####-####-####"><br>
+                        <label>Cardholder Name</label>
+                            <input type="text" placeholder="Enter name here"><br>
 
-                  <label>Expiry Date:</label>
-                     <input type="text" placeholder="DD-MM-YY"><br>
+                        <label>Card Number</label>
+                           <input type="text" placeholder="####-####-####"><br>
 
-                  <label>CVV Number:</label>
-                     <input type="text" placeholder="###"><br>
+                        <label>CVV Number</label>
+                          <input type="text" maxlength="3" placeholder="###"><br>
 
-                  <label>Cardholder Name:</label>
-                     <input type="text" placeholder="Enter name here"><br>
+                        <label>Expiry Date</label>
+                           <input type="text" placeholder="DD-MM-YY"><br>
+                        <!-- <input type="reset" value="Go Back" class="button"> -->
+                        <!-- <input type="submit" value="Pay Now" class ="button"> -->
+                  </form>
 
-                  <input type="reset" value="Go Back" class="button">
-                  <input type="submit" value="Pay Now" class ="button">
-            </form>
+                  <form class="billing-info-form" action=completed.html>
+                      <p class="bold">BILLING DETAILS</p>
+                        <label>Full Name</label>
+                            <input type="text" placeholder="Enter name here"><br>
+
+                        <label>Email</label>
+                           <input type="text" placeholder="johnsmith@gmail.com"><br>
+
+                        <label>Phone Number</label>
+                          <input type="text" placeholder="###-###-####"><br>
+
+                        <label>Billing Address</label>
+                           <input type="text" placeholder="123 Street Ave."><br>
+                        <!-- <input type="reset" value="Go Back" class="button"> -->
+                        <input type="submit" value="Pay Now" class ="button">
+                  </form>
+            </div>
          </section>
 
       <section class ="element">
@@ -343,7 +352,7 @@ cumbersome, why can't we just do two double slashes lololol) -->
             <h4>Checkout</h4>
                <div class="cart">
                   <div class="checkout-item">
-                     <img src="../images/wan.png" alt="Picture of cockroach." class="thumb-img">
+                     <img src="../images/1roach.png" alt="Picture of cockroach." class="thumb-img">
                      <div class="checkout-item-info-container">
                       <div class="checkout-item-name"><a href="#1cockroach">One Cockroach </a></div>
                       <div class="checkout-item-description">It's a cockroach</div>
@@ -353,7 +362,7 @@ cumbersome, why can't we just do two double slashes lololol) -->
                   </div>
 
                   <div class="checkout-item">
-                     <img src="../images/too.png" alt="Picture of cockroach." class="thumb-img">
+                     <img src="../images/2roach.png" alt="Picture of cockroach." class="thumb-img">
                      <div class="checkout-item-info-container">
                       <div class="checkout-item-name"> <a href="#1cockroach">Two Cockroaches</a></div>
                       <div class="checkout-item-description">It's some cockroaches</div>
@@ -417,6 +426,15 @@ cumbersome, why can't we just do two double slashes lololol) -->
 <!--End of Branding Components Section-->
 
    </body>
+<!-- Footer time -->
+
+<section class ="element">
+      <h3>Footer</h3>
+         <h4>CSS Selector</h4>
+          <p>footer, .navbar-socials, .navbar-bottom</p>
+
+         <h4>Rendered Element</h4>
+</section>
    <footer>
       <div class="navbar-socials">
         <p>Connect with us on social media!</p>
