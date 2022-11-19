@@ -11,19 +11,63 @@ REFERENCE: https://stackoverflow.com/questions/147500/is-it-possible-to-include-
 }
 
 .navbar-bottom {
+  float: right;
    overflow: hidden;
-   margin-bottom: 0;
+   width: 55%;
+   text-align: right;
+   margin-right: 0;
 }
 
 .navbar-bottom nav{
   margin-bottom: 0;
+}
+
+.navbar-bottom ul{
+  float: right;
+  width: 20%;
+  list-style-type: none;
+  text-align: right;
+  font-size: 0.7em;
+}
+
+.navbar-bottom ul li{
+  clear: both;
+  font-weight: lighter;
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.6em;
+}
+
+.navbar-bottom ul li:nth-child(1){
+  font-weight: bolder;
+  font-size: 1.1em;
+
+}
+
+.navbar-bottom ul li a{
+  position: block;
+  float: right;
+  color: var(--text);
+  padding: 0;
+  text-align: right;
+}
+
+.navbar-socials{
+  float: left;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 30%;
   text-align: center;
+
 }
 
 /* Default styling */
 html {
    background-color: var(--bg);
 }
+
 body {
    font-family: "Comfortaa", Helvetica;
    line-height: 160%;
@@ -252,15 +296,16 @@ text-align: center;
 }
 
 footer {
+   display: block;
+   overflow: hidden;
    border-top: solid .1em var(--secondcolor);
-   text-align: center;
    border-bottom: none;
    margin-bottom: 0;
+   padding-left: 2em;
+   padding-right: 2em;
+   padding-top: 2em;
 }
 
-footer p {
-  text-align: center;
-}
 
 
 /* INTERACTIVE ELEMENTS  */
