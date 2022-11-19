@@ -135,7 +135,7 @@ code {
    border-top-width: 1rem;
    border-style: ridge;
    border-top-color: var(--secondcolor);
-   width: 60%;
+   width: 90%;
    align-content: space-around;
    background-color: var(--white);
 }
