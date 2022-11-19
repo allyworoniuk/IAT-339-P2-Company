@@ -87,11 +87,13 @@ code {
 
 h1 {
    font-family: "Playfair Display";
-   font-size: 3.5em;
-   /* margin-top: 2%;
-   margin-left: 4%; */
-   line-height: 100%;
-
+   font-size: 4em;
+   line-height: 90%;
+   color: var(--text);
+   margin-left: 4%;
+   font-style: italic;
+   font-weight: 400;
+   text-decoration-line: underline;
 }
 
 h2 {
@@ -100,6 +102,7 @@ h2 {
    line-height: 100%;
    margin-top: 4%;
    margin-left: 4%;
+   color: var(--text);
 }
 
 h3 {
@@ -108,19 +111,23 @@ h3 {
    line-height: 100%;
    margin-top: 4%;
    margin-left: 4%;
+   color: var(--text);
 }
 
 h4 {
    font-family: "Playfair Display";
-   font-size: 1.5em;
-   margin-top: 4%;
+   font-size: 2em;
    margin-left: 4%;
+   font-style: italic;
+   line-height: 1em;
+   color: var(--text);
 }
 
 p {
 margin: 0.5em;
 margin-top: 2%;
 margin-left: inherit;
+color: var(--text);
 }
 
 li {
@@ -215,6 +222,35 @@ label {
    font: 1.5em "Comfortaa", monospace;
 }
 
+.order {
+   position: absolute;
+   top: 20%;
+
+   font-family: 'Playfair Display';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 64px;
+   line-height: 85px;
+   text-align: center;
+}
+
+.order-para {
+   position: absolute;
+   width: 851px;
+   height: 143px;
+   left: 329px;
+   top: 679px;
+
+   font-family: 'Comfortaa';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 164%;
+/* or 30px */
+
+text-align: center;
+}
+
 footer {
    border-top: solid .1em var(--secondcolor);
    text-align: center;
@@ -252,12 +288,13 @@ footer p {
 }
 
 .pagenext-button {
+   font-family: "Playfair Display";
+   font-style: italic;
    float: right;
+   position: relative;
    padding: 1em;
    margin: 1em;
    background-color: var(--container);
-   border: solid .4em var(--secondcolor);
-   border-radius: 1em;
 }
 
 .button{
@@ -342,7 +379,7 @@ footer p {
    margin: 0 auto;
    color: white;
 
-background-color: rgba(0,0,0, 1); /* semi transparent black*/
+/* background-color: rgba(0,0,0, 1); /* semi transparent black*/
 }
 
 
