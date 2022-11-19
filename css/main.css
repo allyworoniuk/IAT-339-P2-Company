@@ -322,29 +322,11 @@ input[type=submit]{
 
 
 .order {
-   position: absolute;
-   top: 20%;
-
-   font-family: 'Playfair Display';
-   font-style: normal;
-   font-weight: 600;
-   font-size: 64px;
-   line-height: 85px;
    text-align: center;
+   /*FIX THIS STUFF HERE*/
 }
 
 .order-para {
-   position: absolute;
-   width: 851px;
-   height: 143px;
-   left: 329px;
-   top: 679px;
-
-   font-family: 'Comfortaa';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 18px;
-   line-height: 164%;
 /* or 30px */
 
 text-align: center;
