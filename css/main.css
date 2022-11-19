@@ -142,7 +142,7 @@ code {
 
 h1 {
    font-family: "Playfair Display";
-   font-size: 4em;
+   font-size: 3.5em;
    line-height: 90%;
    color: var(--text);
    margin-left: 4%;
@@ -168,6 +168,7 @@ h3 {
    margin-left: 4%;
    color: var(--text);
    font-style: italic;
+   font-weight: 100;
 }
 
 h4 {
@@ -302,13 +303,13 @@ label {
 .contact-container{
   display: block;
   width: 50%;
-
-  padding: 2em;
+  margin-left: 2em;
+  padding-bottom: 2em;
 }
 
 .contact-name{
   float: left;
-  width: 45%
+  width: 50%
 }
 
 .contact-rating{
@@ -344,7 +345,7 @@ for nesting a class inside another class -- i forgot how to do this oops
    margin-bottom: 15em;
 }
 
-#continueshop {
+.button-top-space {
    margin-top:8em;
 }
 
@@ -353,6 +354,9 @@ for nesting a class inside another class -- i forgot how to do this oops
    font-weight: 200;
 }
 
+.bold {
+   font-weight: 700;
+}
 
 
 footer {
@@ -683,7 +687,7 @@ margin: 5%;
 .payment-info-form input[type=text]{
   margin-top: 0.2em;
   border: 0.1em solid black;
-  border-radius: 0.4em;
+  border-radius: 0.1em;
   height: 0.6em;
   width: 80%;
 
@@ -710,7 +714,7 @@ margin: 5%;
 .billing-info-form input[type=text]{
   margin-top: 0.1em;
   border: 0.1em solid black;
-  border-radius: 0.4em;
+  border-radius: 0.1em;
   height: 0.6em;
   width: 90%;
 }
