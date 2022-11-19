@@ -237,7 +237,7 @@ a:hover {
 
    /* default link image state grayscale */
 a img {
-   filter:grayscale(100%);
+   /* filter:grayscale(100%); */
 }
 
 a img:hover, img:focus {
@@ -317,6 +317,27 @@ footer {
    padding-top: 2em;
 }
 
+.flexylayout {
+   padding-top: 3em;
+   padding-bottom: 5em;
+   border-top: solid black .25em;
+   border-bottom: solid black .25em;
+   display: flex;
+   background-color: white;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+.flexylayout>div {
+ width: 50%;
+ margin: 5%;
+}
+
+.flexylayout form {
+   width: 100%;
+}
+
+
 .review {
    display: flex;
    justify-content:center;
@@ -360,6 +381,8 @@ margin: 5%;
 .overlay-img {
    width: 100%;
    background-color: var(--othersecondcolor);
+   z-index: 0;
+   position: relative;
 /*let's pretend theres code here to make the text overlay it*/
 }
 
