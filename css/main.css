@@ -326,6 +326,10 @@ input[type=submit]{
   margin-left: 35%;
 }
 
+input[type=reset]{
+  margin-left: 35%;
+}
+
 
 .order {
    text-align: center;
