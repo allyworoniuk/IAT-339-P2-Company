@@ -237,34 +237,78 @@ a img:hover, img:focus {
    Used to figure out how to round out corners of padding. */
 form {
    width:60%;
+   line-height: 1.5em;
    padding: .5em;
    padding-top: 2em;
    padding-bottom: 2em;
    /* background-color: var(--navbg); */
-   margin-bottom: 22px;
-   padding-left: 20px;
+   margin-bottom: 1.6em;
+   padding-left: 1.3em;
    border-width: .01em;
-   border-radius: 10px;
+   border-radius: 0.6em;
 }
 
+
 input {
+  display: block;
   font: 300 1.2em "Comfortaa", monospace;
   background-color: var(--container);
-  padding: 10px;
-  margin-top: 20px;
-  margin-bottom: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 0.3em;
+  padding: 0.6em;
+  margin: 0.3em;
+  margin-top: 0.8em;
+
   width: 50%;
+}
+
+textarea {
+  display: block;
+  font: 300 1.2em "Comfortaa", monospace;
+  background-color: var(--container);
+  padding: 0.6em;
+  margin: 0.3em;
+  margin-top: 0.8em;
+  border-width: .11em;
+  border-style: inset;
+  width: 80%;
 }
 
 label {
    margin: 10px;
-   background-color: var(--navbg);
+   /* background-color: var(--navbg); */
    font-weight: bold;
    font: 1.5em "Comfortaa", monospace;
 }
+
+.contact-desc{
+  width: 100%;
+}
+
+.contact-container{
+  display: block;
+  width: 50%;
+
+  padding: 2em;
+}
+
+.contact-name{
+  float: left;
+  width: 45%
+}
+
+.contact-rating{
+  display: inline-block;
+  width: 45%;
+}
+
+/* .contact-form input[type=submit], .contact-form input[type=button]{
+  position: absolute;
+  float: right;
+} */
+
+input[type=submit]{
+  margin-left: 35%;
+}
+
 
 .order {
    position: absolute;
@@ -296,6 +340,7 @@ text-align: center;
 }
 
 footer {
+   clear: both;
    display: block;
    overflow: hidden;
    border-top: solid .1em var(--secondcolor);
@@ -445,8 +490,18 @@ footer {
 /*container for checkout items*/
 .cart {
    display: block;
-   width: 80%;
+   width: 100%;
    padding: 2em;
+
+}
+
+.checkout-cart p{
+
+  float: right;
+}
+
+.checkout-cart input[type=submit]{
+  float: right;
 }
 
 .checkout-item input[type=text]{
@@ -572,4 +627,47 @@ footer {
 .container {
    display: flex;
    flex-wrap: wrap;
+}
+
+
+
+/*STAR RATING CODE FROM https://codepen.io/hesguru/pen/BaybqXv*/
+
+.rate {
+    margin: 0;
+    padding: 0;
+    height: 4em;
+    width: 18.3em;
+    padding-left: 0;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-1000em;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:0.8em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:3em;
+    color:#ccc;
+    padding: 0;
+}
+.rate:not(:checked) > label:before {
+    content: '★';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
 }
